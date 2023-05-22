@@ -1,0 +1,3 @@
+2023-05-22T22:48:39AEST add '-h' help option
+2023-05-22T22:50:43AEST input from stdin / --path FILE
+
