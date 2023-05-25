@@ -13,6 +13,9 @@ def scramble_word(word):
 def scramble_input(f):
     """This function takes a stream, breaks it into words, and applies the scramble_word function to each word"""
     for line in f:
+        if len(line.strip()) == 0:
+            print()
+            continue
         leading_whitespace = ''
         trailing_whitespace = ''
         t = re.search(r'^\s*', line)
