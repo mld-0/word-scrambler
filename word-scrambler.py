@@ -14,16 +14,16 @@ def scramble_input(f):
     """This function takes a stream, breaks it into words, and applies the scramble_word function to each word"""
     for line in f:
         leading_whitespace = ''
-        trailing_whitepace = ''
+        trailing_whitespace = ''
         t = re.search(r'^\s*', line)
         if t:
             leading_whitespace = t.group(0)
-        t = re.search(r'\s*$', line)
+        t = re.search(r'\s*\\n$', line)
         if t:
-            trailing_whitepace = t.group(0)
+            trailing_whitespace = t.group(0)
         words = line.split()
         scrambled_words = [scramble_word(word) for word in words]
-        result = leading_whitespace + ' '.join(scrambled_words) + trailing_whitepace
+        result = leading_whitespace + ' '.join(scrambled_words) + trailing_whitespace
         print(result)
 
 
