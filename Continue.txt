@@ -1,5 +1,3 @@
 2023-05-22T22:48:39AEST add '-h' help option
 2023-05-22T22:50:43AEST input from stdin / --path FILE
-2023-05-25T21:37:08AEST preserve tabs/multiple spaces in lines
-2023-05-25T21:58:56AEST should urls be scrambled?
-
+2023-05-26T22:49:59AEST add tests(?)
